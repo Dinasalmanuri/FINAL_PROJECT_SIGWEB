@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - Prevalensi Stunting Kab. Bantul</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="d-none d-lg-block">Prevalensi Stunting Kabupaten Bantul</span>
+        </a>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form class="search-form d-flex align-items-center" method="POST" action="#">
+          <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
+          <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown pe-3">
+            <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+              <span class="d-none d-md-block dropdown-toggle ps-2">You</span> </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+              <li class="dropdown-header">
+                <h6>Dina Salmanuri</h6>
+                <span>Mahasiswi</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Informasi</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="components-alerts.html"> <i class="bi bi-circle"></i><span>Stunting</span> </a>
+            </li>
+            <li>
+              <a href="components-accordion.html"> <i class="bi bi-circle"></i><span>Prevalensi</span> </a>
+            </li>
+            <li>
+              <a href="components-badges.html"> <i class="bi bi-circle"></i><span>Penyebab</span> </a>
+            </li>
+            <li>
+              <a href="components-breadcrumbs.html"> <i class="bi bi-circle"></i><span>Dampak</span> </a>
+            </li>
+            <li>
+              <a href="components-buttons.html"> <i class="bi bi-circle"></i><span>Pencegahan</span> </a>
+            </li>
+            <li>
+              <a href="components-cards.html"> <i class="bi bi-circle"></i><span>TPPS</span> </a>
+            </li>
+            <li>
+              <a href="components-carousel.html"> <i class="bi bi-circle"></i><span>Konsep Percepatan Penurunan Stunting</span> </a>
+            </li>
+            <li>
+              <a href="components-list-group.html"> <i class="bi bi-circle"></i><span>TOC Percepatan Penurunan Stunting</span> </a>
+            </li>
+            <li>
+              <a href="components-modal.html"> <i class="bi bi-circle"></i><span>Publikasi</span> </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Tabel</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="tables-general.html"> <i class="bi bi-circle"></i><span>Tabel Prevalensi Stunting</span> </a>
+            </li>
+            <li>
+              <a href="tables-data.html"> <i class="bi bi-circle"></i><span>Tabel Puskesmas</span> </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-bar-chart"></i><span>Diagram</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="charts-chartjs.html"> <i class="bi bi-circle"></i><span>Diagram Stunting</span> </a>
+            </li>
+            <li>
+              <a href="charts-apexcharts.html"> <i class="bi bi-circle"></i><span>Diagram Prevalensi Stunting</span> </a>
+            </li>
+            <li>
+              <a href="charts-echarts.html"> <i class="bi bi-circle"></i><span>Diagram Balita</span> </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Charts Nav -->
+
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-card-list"></i>
+            <span>Register</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <i class="bi bi-question-circle"></i>
+            <span>F.A.Q</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Tabel Prevalensi Stunting</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Tabel</li>
+            <li class="breadcrumb-item active">Tabel Prevalensi Stunting</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Data Prevalensi Stunting di Kabupaten Bantul</h5>
+                <p>
+                  Data ini didapatkan dari Dashboard Monitoring Pelaksanaan 8 Aksi Konvergensi Intervensi Penurunan Stunting Terintegrasi oleh DITJEN Bina Pembangunan Daerah - Kementrian Dalam Negeri. Dapat diakses di
+                  <a href="https://aksi.bangda.kemendagri.go.id/emonev/DashPrev/index/6" target="_blank">link berikut</a>.
+                </p>
+
+                <!-- Table with stripped rows -->
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th><b>N</b>ama Desa</th>
+                      <th>Jumlah Balita (Anak)</th>
+                      <th>Stunting-Pendek (Anak)</th>
+                      <th>Stunting-Sangat Pendek (Anak)</th>
+                      <th>Prevalensi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>PONCOSARI</td>
+                      <td>655</td>
+                      <td>655</td>
+                      <td>29</td>
+                      <td>16.5%</td>
+                    </tr>
+                    <tr>
+                      <td>TRIMURTI</td>
+                      <td>981</td>
+                      <td>95</td>
+                      <td>22</td>
+                      <td>11.9%</td>
+                    </tr>
+                    <tr>
+                      <td>GADINGSARI</td>
+                      <td>419</td>
+                      <td>18</td>
+                      <td>10</td>
+                      <td>6.7%</td>
+                    </tr>
+                    <tr>
+                      <td>GADINGHARJO</td>
+                      <td>188</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>3.2%</td>
+                    </tr>
+                    <tr>
+                      <td>SRIGADING</td>
+                      <td>459</td>
+                      <td>16</td>
+                      <td>2</td>
+                      <td>3.9%</td>
+                    </tr>
+                    <tr>
+                      <td>MURTIGADING</td>
+                      <td>425</td>
+                      <td>16</td>
+                      <td>3</td>
+                      <td>4.5%</td>
+                    </tr>
+                    <tr>
+                      <td>TIRTOHARGO</td>
+                      <td>104</td>
+                      <td>3</td>
+                      <td>1</td>
+                      <td>3.8%</td>
+                    </tr>
+                    <tr>
+                      <td>PARANGTRITIS</td>
+                      <td>381</td>
+                      <td>16</td>
+                      <td>3</td>
+                      <td>5.0%</td>
+                    </tr>
+                    <tr>
+                      <td>DONOTIRTO</td>
+                      <td>380</td>
+                      <td>22</td>
+                      <td>1</td>
+                      <td>6.1</td>
+                    </tr>
+                    <tr>
+                      <td>TIRTOSARI</td>
+                      <td>194</td>
+                      <td>15</td>
+                      <td>2</td>
+                      <td>8.8%</td>
+                    </tr>
+                    <tr>
+                      <td>TIRTOMULYO</td>
+                      <td>337</td>
+                      <td>23</td>
+                      <td>4</td>
+                      <td>8.0%</td>
+                    </tr>
+                    <tr>
+                      <td>SELOHARJO</td>
+                      <td>698</td>
+                      <td>36</td>
+                      <td>13</td>
+                      <td>7.0%</td>
+                    </tr>
+                    <tr>
+                      <td>PANJANGREJO</td>
+                      <td>488</td>
+                      <td>32</td>
+                      <td>10</td>
+                      <td>8.6%</td>
+                    </tr>
+                    <tr>
+                      <td>SRIHARDONO</td>
+                      <td>780</td>
+                      <td>31</td>
+                      <td>5</td>
+                      <td>4.6%</td>
+                    </tr>
+                    <tr>
+                      <td>SIDOMULYO</td>
+                      <td>638</td>
+                      <td>9</td>
+                      <td>9</td>
+                      <td>2.8%</td>
+                    </tr>
+                    <tr>
+                      <td>MULYODADI</td>
+                      <td>625</td>
+                      <td>17</td>
+                      <td>13</td>
+                      <td>4.8</td>
+                    </tr>
+                    <tr>
+                      <td>SUMBERMULYO</td>
+                      <td>874</td>
+                      <td>12</td>
+                      <td>11</td>
+                      <td>2.6%</td>
+                    </tr>
+                    <tr>
+                      <td>CATURHARJO</td>
+                      <td>645</td>
+                      <td>30</td>
+                      <td>10</td>
+                      <td>6.2%</td>
+                    </tr>
+                    <tr>
+                      <td>TRIHARJO</td>
+                      <td>678</td>
+                      <td>50</td>
+                      <td>4</td>
+                      <td>8.0%</td>
+                    </tr>
+                    <tr>
+                      <td>GILANGHARJO</td>
+                      <td>860</td>
+                      <td>37</td>
+                      <td>19</td>
+                      <td>6.5%</td>
+                    </tr>
+                    <tr>
+                      <td>WIJIREJO</td>
+                      <td>603</td>
+                      <td>26</td>
+                      <td>0</td>
+                      <td>4.3%</td>
+                    </tr>
+                    <tr>
+                      <td>PALBAPANG</td>
+                      <td>767</td>
+                      <td>16</td>
+                      <td>6</td>
+                      <td>2.9%</td>
+                    </tr>
+                    <tr>
+                      <td>RINGIN HARJO</td>
+                      <td>433</td>
+                      <td>31</td>
+                      <td>13</td>
+                      <td>10.2%</td>
+                    </tr>
+                    <tr>
+                      <td>BANTUL</td>
+                      <td>718</td>
+                      <td>33</td>
+                      <td>12</td>
+                      <td>6.3%</td>
+                    </tr>
+                    <tr>
+                      <td>TRIRENGGO</td>
+                      <td>1152</td>
+                      <td>29</td>
+                      <td>7</td>
+                      <td>3.1%</td>
+                    </tr>
+                    <tr>
+                      <td>SABDODADI</td>
+                      <td>348</td>
+                      <td>25</td>
+                      <td>9</td>
+                      <td>9.8%</td>
+                    </tr>
+                    <tr>
+                      <td>PATALAN</td>
+                      <td>686</td>
+                      <td>30</td>
+                      <td>9</td>
+                      <td>5.7%</td>
+                    </tr>
+                    <tr>
+                      <td>CANDEN</td>
+                      <td>665</td>
+                      <td>44</td>
+                      <td>11</td>
+                      <td>8.3%</td>
+                    </tr>
+                    <tr>
+                      <td>SUMBER AGUNG</td>
+                      <td>813</td>
+                      <td>37</td>
+                      <td>15</td>
+                      <td>6.4%</td>
+                    </tr>
+                    <tr>
+                      <td>TRIMULYO</td>
+                      <td>1185</td>
+                      <td>39</td>
+                      <td>19</td>
+                      <td>4.9%</td>
+                    </tr>
+                    <tr>
+                      <td>SELOPAMIORO</td>
+                      <td>880</td>
+                      <td>105</td>
+                      <td>17</td>
+                      <td>13.9%</td>
+                    </tr>
+                    <tr>
+                      <td>SRIHARJO</td>
+                      <td>496</td>
+                      <td>72</td>
+                      <td>7</td>
+                      <td>15.9%</td>
+                    </tr>
+                    <tr>
+                      <td>KEBON AGUNG</td>
+                      <td>235</td>
+                      <td>22</td>
+                      <td>2</td>
+                      <td>10.2%</td>
+                    </tr>
+                    <tr>
+                      <td>KARANG TENGAH</td>
+                      <td>344</td>
+                      <td>45</td>
+                      <td>6</td>
+                      <td>14.8%</td>
+                    </tr>
+                    <tr>
+                      <td>GIRIREJO</td>
+                      <td>276</td>
+                      <td>20</td>
+                      <td>11</td>
+                      <td>11.2%</td>
+                    </tr>
+                    <tr>
+                      <td>KARANGTALUN</td>
+                      <td>101</td>
+                      <td>12</td>
+                      <td>3</td>
+                      <td>14.9%</td>
+                    </tr>
+                    <tr>
+                      <td>IMOGIRI</td>
+                      <td>215</td>
+                      <td>16</td>
+                      <td>2</td>
+                      <td>8.4%</td>
+                    </tr>
+                    <tr>
+                      <td>WUKIRSARI</td>
+                      <td>932</td>
+                      <td>71</td>
+                      <td>23</td>
+                      <td>10.1%</td>
+                    </tr>
+                    <tr>
+                      <td>MANGUNAN</td>
+                      <td>296</td>
+                      <td>29</td>
+                      <td>5</td>
+                      <td>11.5%</td>
+                    </tr>
+                    <tr>
+                      <td>MUNTUK</td>
+                      <td>415</td>
+                      <td>24</td>
+                      <td>3</td>
+                      <td>6.5%</td>
+                    </tr>
+                    <tr>
+                      <td>DLINGO</td>
+                      <td>289</td>
+                      <td>20</td>
+                      <td>7</td>
+                      <td>9.3%</td>
+                    </tr>
+                    <tr>
+                      <td>TEMUWUH</td>
+                      <td>430</td>
+                      <td>28</td>
+                      <td>2</td>
+                      <td>7.0%</td>
+                    </tr>
+                    <tr>
+                      <td>JATIMULYO</td>
+                      <td>287</td>
+                      <td>15</td>
+                      <td>1</td>
+                      <td>5.6%</td>
+                    </tr>
+                    <tr>
+                      <td>TERONG</td>
+                      <td>236</td>
+                      <td>6</td>
+                      <td>4</td>
+                      <td>4.2%</td>
+                    </tr>
+                    <tr>
+                      <td>WONOKROMO</td>
+                      <td>921</td>
+                      <td>30</td>
+                      <td>30</td>
+                      <td>4.3%</td>
+                    </tr>
+                    <tr>
+                      <td>PLERET</td>
+                      <td>767</td>
+                      <td>49</td>
+                      <td>8</td>
+                      <td>7.4%</td>
+                    </tr>
+                    <tr>
+                      <td>SEGOROYOSO</td>
+                      <td>402</td>
+                      <td>34</td>
+                      <td>3</td>
+                      <td>9.2%</td>
+                    </tr>
+                    <tr>
+                      <td>BAWURAN</td>
+                      <td>342</td>
+                      <td>18</td>
+                      <td>6</td>
+                      <td>7.0%</td>
+                    </tr>
+                    <tr>
+                      <td>WONOLELO</td>
+                      <td>294</td>
+                      <td>17</td>
+                      <td>3</td>
+                      <td>6.8%</td>
+                    </tr>
+                    <tr>
+                      <td>SITIMULYO</td>
+                      <td>1178</td>
+                      <td>54</td>
+                      <td>8</td>
+                      <td>5.3%</td>
+                    </tr>
+                    <tr>
+                      <td>SRIMULYO</td>
+                      <td>1004</td>
+                      <td>41</td>
+                      <td>8</td>
+                      <td>4.9%</td>
+                    </tr>
+                    <tr>
+                      <td>SRIMARTANI</td>
+                      <td>1073</td>
+                      <td>59</td>
+                      <td>7</td>
+                      <td>6.2%</td>
+                    </tr>
+                    <tr>
+                      <td>TAMANAN</td>
+                      <td>560</td>
+                      <td>6</td>
+                      <td>1</td>
+                      <td>1.3%</td>
+                    </tr>
+                    <tr>
+                      <td>JAGALAN</td>
+                      <td>159</td>
+                      <td>5</td>
+                      <td>4</td>
+                      <td>5.7%</td>
+                    </tr>
+                    <tr>
+                      <td>SINGOSAREN</td>
+                      <td>270</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>4.1%</td>
+                    </tr>
+                    <tr>
+                      <td>WIROKERTEN</td>
+                      <td>937</td>
+                      <td>20</td>
+                      <td>13</td>
+                      <td>3.5%</td>
+                    </tr>
+                    <tr>
+                      <td>JAMBIDAN</td>
+                      <td>733</td>
+                      <td>13</td>
+                      <td>3</td>
+                      <td>2.2%</td>
+                    </tr>
+                    <tr>
+                      <td>POTORONO</td>
+                      <td>864</td>
+                      <td>10</td>
+                      <td>7</td>
+                      <td>2.0%</td>
+                    </tr>
+                    <tr>
+                      <td>BATURETNO</td>
+                      <td>1085</td>
+                      <td>18</td>
+                      <td>11</td>
+                      <td>2.7%</td>
+                    </tr>
+                    <tr>
+                      <td>BANGUNTAPAN</td>
+                      <td>2210</td>
+                      <td>20</td>
+                      <td>0</td>
+                      <td>0.9%</td>
+                    </tr>
+                    <tr>
+                      <td>PENDOWOHARJO</td>
+                      <td>1213</td>
+                      <td>10</td>
+                      <td>5</td>
+                      <td>1.2%</td>
+                    </tr>
+                    <tr>
+                      <td>TIMBULHARJO</td>
+                      <td>1168</td>
+                      <td>14</td>
+                      <td>12</td>
+                      <td>2.2%</td>
+                    </tr>
+                    <tr>
+                      <td>BANGUNHARJO</td>
+                      <td>1330</td>
+                      <td>48</td>
+                      <td>11</td>
+                      <td>4.4%</td>
+                    </tr>
+                    <tr>
+                      <td>PANGGUNGHARJO</td>
+                      <td>1293</td>
+                      <td>65</td>
+                      <td>12</td>
+                      <td>6.0%</td>
+                    </tr>
+                    <tr>
+                      <td>BANGUNJIWO</td>
+                      <td>1811</td>
+                      <td>26</td>
+                      <td>11</td>
+                      <td>2.0%</td>
+                    </tr>
+                    <tr>
+                      <td>TIRTONIRMOLO</td>
+                      <td>1518</td>
+                      <td>31</td>
+                      <td>16</td>
+                      <td>3.1%</td>
+                    </tr>
+                    <tr>
+                      <td>TAMANTIRTO</td>
+                      <td>1368</td>
+                      <td>17</td>
+                      <td>12</td>
+                      <td>2.1%</td>
+                    </tr>
+                    <tr>
+                      <td>NGESTIHARJO</td>
+                      <td>1565</td>
+                      <td>21</td>
+                      <td>17</td>
+                      <td>2.4</td>
+                    </tr>
+                    <tr>
+                      <td>TRIWIDADI</td>
+                      <td>701</td>
+                      <td>40</td>
+                      <td>16</td>
+                      <td>8.0%</td>
+                    </tr>
+                    <tr>
+                      <td>SENDANGSARI</td>
+                      <td>780</td>
+                      <td>52</td>
+                      <td>13</td>
+                      <td>8.3%</td>
+                    </tr>
+                    <tr>
+                      <td>GUWOSARI</td>
+                      <td>1051</td>
+                      <td>45</td>
+                      <td>10</td>
+                      <td>5.2%</td>
+                    </tr>
+                    <tr>
+                      <td>ARGODADI</td>
+                      <td>616</td>
+                      <td>36</td>
+                      <td>10</td>
+                      <td>7.5%</td>
+                    </tr>
+                    <tr>
+                      <td>ARGOREJO</td>
+                      <td>756</td>
+                      <td>28</td>
+                      <td>8</td>
+                      <td>4.8%</td>
+                    </tr>
+                    <tr>
+                      <td>ARGOSARI</td>
+                      <td>454</td>
+                      <td>12</td>
+                      <td>5</td>
+                      <td>3.7%</td>
+                    </tr>
+                    <tr>
+                      <td>ARGOMULYO</td>
+                      <td>836</td>
+                      <td>28</td>
+                      <td>12</td>
+                      <td>4.8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2024</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">Designed by <a>Dina Salmanuri</a></div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
